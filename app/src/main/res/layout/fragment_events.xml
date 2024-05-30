@@ -1,11 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Evenementen"
-        android:layout_gravity="center"/>
-</FrameLayout>
+    <ImageView
+        android:id="@+id/banner_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/hetwapenevenement" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="top"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/titel1"
+                    style="@style/TextviewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SpraakSmakend 2024"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:paddingHorizontal="15dp"
+                    android:background="@drawable/rounded_corner"/>
+
+                <TextView
+                    android:id="@+id/beschrijving1"
+                    style="@style/TextviewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="De mooiste bier en spijs combinaties (eventueel ook wijn mogelijk) in combinatie met live muziek. Een kaartje kost 65,- euro per persoon. 07/07/2014, starttijd 15:00"
+                    android:visibility="gone"
+                    android:padding="8dp"
+                    android:background="@drawable/rounded_corner" />
+
+
+                <TextView
+                    android:id="@+id/titel2"
+                    style="@style/TextviewStyle"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Carnaval 2024"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:paddingHorizontal="15dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/rounded_corner"/>
+
+                <TextView
+                    android:id="@+id/beschrijving2"
+                    style="@style/TextviewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Bier en wijn is venijn, wijn en bier zorgt voor plezier 14/02/2025, starttijd 15:00"
+                    android:visibility="gone"
+                    android:padding="8dp"
+                    android:background="@drawable/rounded_corner"/>
+
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>
