@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/rounded_corner"
+    >
+
+    <ImageView
+        android:id="@+id/drink_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/drink_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Naam"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/drink_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beschrijving"
+        android:paddingTop="4dp" />
+
+    <TextView
+        android:id="@+id/drink_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categorie"
+        android:paddingTop="4dp" />
+
+    <TextView
+        android:id="@+id/drink_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brouwer"
+        android:paddingTop="4dp" />
+
+    <TextView
+        android:id="@+id/drink_abv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alcoholpercentage"
+        android:paddingTop="4dp" />
+
+    <TextView
+        android:id="@+id/drink_stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sterren"
+        android:paddingTop="4dp" />
+
+
+</LinearLayout>

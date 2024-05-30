@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/rounded_corner">
+
+
+    <ImageView
+        android:id="@+id/drink_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/drink_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drank Naam"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/drink_brewer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brouwer"
+        android:paddingTop="4dp" />
+
+    <TextView
+        android:id="@+id/drink_alcohol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alcoholpercentage"
+        android:paddingTop="4dp" />
+
+    <TextView
+        android:id="@+id/drink_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prijs"
+        android:paddingTop="4dp" />
+</LinearLayout>
