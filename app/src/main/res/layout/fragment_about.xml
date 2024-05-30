@@ -3,9 +3,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Achtergrondafbeelding -->
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/hetwapen_doorzichtig" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#90000000" />
+
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/about_us_text"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Over ons"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Het Wapen van Roosendaal is al ruim 50 jaar een geliefd modern bruin café in het hart van Roosendaal. Begonnen in 1970 door tante Jopie en Pierre, en sinds 1986 geleid door Henri en Anja, heeft het café zich ontwikkeld tot een plek waar iedereen zich thuis voelt. Met een uitbreiding in 2002, een vernieuwde keuken in 2015, en een moderne tapinstallatie met 24 kranen sinds 2019, blijven we meegaan met de tijd. Maaike, mede-eigenaar sinds 2007, zet deze traditie voort. Het Wapen is de huiskamer van Roosendaal en een thuisbasis voor vele carnavalsbandjes, verenigingen en vriendengroepen."
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
 </FrameLayout>
