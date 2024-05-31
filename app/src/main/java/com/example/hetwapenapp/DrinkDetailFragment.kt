@@ -11,6 +11,7 @@ import com.bumptech.glide.Glide
 
 class DrinkDetailDialogFragment : DialogFragment() {
 
+    //Weergeven van het detailscherm van de drankjes
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -18,6 +19,7 @@ class DrinkDetailDialogFragment : DialogFragment() {
         return inflater.inflate(R.layout.fragment_drink_detail, container, false)
     }
 
+    //Weergeven en instellen van de drankjesdata
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -31,12 +33,13 @@ class DrinkDetailDialogFragment : DialogFragment() {
 
         val drink = arguments?.getParcelable<Drinks>("drink")
 
+        // data uit het object ophalen en tonen
         drink?.let {
             drinkName.text = it.name
             drinkDescription.text = it.description
             drinkType.text = "Type: ${it.type}"
             drinkAbv.text = "ABV: ${it.abv}%"
-            drinkStars.text = "Stars: ${it.stars}"
+            drinkStars.text = "Sterren: ${it.stars}"
             drinkCompany.text = it.company
             Glide.with(this).load(it.image).into(drinkImage)
         }

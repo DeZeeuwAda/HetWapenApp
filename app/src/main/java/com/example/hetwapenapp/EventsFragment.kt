@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 
 class EventsFragment : Fragment(R.layout.fragment_events) {
 
+    // Roept de functie onViewCreated aan en toont hierna de events
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
