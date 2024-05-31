@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
+
+    // Het instellen van het navigeren van de homefragment naar de nieuwe fragments toe
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         view.findViewById<Button>(R.id.button_events).setOnClickListener {

@@ -2,16 +2,26 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
-    <androidx.appcompat.widget.SearchView
-        android:id="@+id/search_view"
+<!--    aanmaken van een soort dropdown menu voor het filtreren-->
+    <Spinner
+        android:id="@+id/filter_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:queryHint="Search by name or category"/>
+        android:entries="@array/filter_options"
+        android:textColor="@color/colorPrimary"
+        />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/drinks_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
 </LinearLayout>

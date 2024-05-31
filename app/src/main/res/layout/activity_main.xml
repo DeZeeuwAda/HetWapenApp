@@ -6,10 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<!--    Instellen van de appbar-->
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+<!--        Instellen van de toolbar -->
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
@@ -21,11 +23,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
-                android:src="@mipmap/hetwapen" />
+                android:src="@mipmap/hetwapen_foreground" />
 
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
+<!--    Indeling van het frame en fragment-->
     <FrameLayout
         android:id="@+id/nav_host_fragment_container"
         android:layout_width="match_parent"
