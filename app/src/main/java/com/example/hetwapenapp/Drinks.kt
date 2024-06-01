@@ -3,6 +3,7 @@ package com.example.hetwapenapp
 import android.os.Parcel
 import android.os.Parcelable
 
+// Alle data en gegevens die gebruikt wordt
 data class Drinks(
     val id: Int,
     val name: String,
@@ -13,6 +14,8 @@ data class Drinks(
     val image: String,
     val company: String
 ) : Parcelable {
+
+    // Objecten kunnen worden gelezen
     constructor(parcel: Parcel) : this(
         parcel.readInt(),
         parcel.readString() ?: "",
@@ -24,6 +27,7 @@ data class Drinks(
         parcel.readString() ?: ""
     )
 
+    // Schrijft de gegevens naar de parcel
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeInt(id)
         parcel.writeString(name)

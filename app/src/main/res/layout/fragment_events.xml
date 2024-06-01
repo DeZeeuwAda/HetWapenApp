@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+<!--    Aanmaken en tonen van de banner-->
     <ImageView
         android:id="@+id/banner_image"
         android:layout_width="match_parent"
@@ -23,6 +24,7 @@
                 android:layout_gravity="top"
                 android:gravity="center_horizontal">
 
+<!--                Aanmaken events, titels en beschrijvingen-->
                 <TextView
                     android:id="@+id/titel1"
                     style="@style/TextviewStyle"

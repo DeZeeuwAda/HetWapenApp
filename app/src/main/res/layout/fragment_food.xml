@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+<!--    Implementeren van de webview voor de menukaart-->
     <WebView
         android:id="@+id/webview"
         android:layout_width="match_parent"
