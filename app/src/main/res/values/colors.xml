@@ -2,7 +2,7 @@
 <resources>
     <!-- Basis kleuren -->
     <color name="colorPrimary">#E8393A</color>
-    <color name="colorPrimaryVariant">#E8393A</color>
+    <color name="colorPrimaryVariant">#B45B68</color>
     <color name="colorOnPrimary">#FFFFFF</color>
     <color name="colorSecondary">#000000</color>
     <color name="colorBackground">#FFFFFF</color>

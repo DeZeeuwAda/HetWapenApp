@@ -1,0 +1,30 @@
+Index: app/src/main/res/layout/fragment_events.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<FrameLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\">\r\n\r\n    <TextView\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"Evenementen\"\r\n        android:layout_gravity=\"center\"/>\r\n</FrameLayout>\r\n
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_events.xml b/app/src/main/res/layout/fragment_events.xml
+--- a/app/src/main/res/layout/fragment_events.xml	
++++ b/app/src/main/res/layout/fragment_events.xml	
+@@ -1,11 +1,14 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+-    android:layout_height="match_parent">
++    android:layout_height="match_parent"
++    tools:context=".EventsFragment">
+ 
++    <!-- TODO: Update blank fragment layout -->
+     <TextView
+-        android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
+-        android:text="Evenementen"
+-        android:layout_gravity="center"/>
+-</FrameLayout>
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:text="@string/hello_blank_fragment" />
++
++</FrameLayout>
+\ No newline at end of file

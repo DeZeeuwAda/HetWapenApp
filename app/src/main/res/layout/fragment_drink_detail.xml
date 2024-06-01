@@ -4,7 +4,9 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@drawable/rounded_corner"
+    android:minHeight="300dp"
+    android:minWidth="300dp"
+    android:background="@drawable/rounded_cornerdetail"
     >
 
     <ImageView
