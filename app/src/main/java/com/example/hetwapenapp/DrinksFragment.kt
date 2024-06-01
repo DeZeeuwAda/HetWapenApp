@@ -42,13 +42,13 @@ class DrinksFragment : Fragment() {
         requestQueue = Volley.newRequestQueue(context)
         fetchDrinks()
 
-        // Setup the spinner with custom layout
+        // Eigen layout en thema voor de spinner
         ArrayAdapter.createFromResource(
             requireContext(),
             R.array.filter_options,
-            R.layout.spinner_item // Use the custom layout
+            R.layout.spinner_item
         ).also { adapter ->
-            adapter.setDropDownViewResource(R.layout.spinner_item) // Use the custom layout for dropdown items
+            adapter.setDropDownViewResource(R.layout.spinner_item)
             filterSpinner.adapter = adapter
         }
 
@@ -58,7 +58,7 @@ class DrinksFragment : Fragment() {
             }
 
             override fun onNothingSelected(parent: AdapterView<*>) {
-                // Do nothing
+                // Als er niks geselecteerd is, alles blijven tonen/ niks doen
             }
         }
 
@@ -72,6 +72,7 @@ class DrinksFragment : Fragment() {
         })
     }
 
+    // Aanroepen van de API
     private fun fetchDrinks() {
         val url = "https://hetwapen.projects.adainforma.tk/api/v1/drink"
 
@@ -116,6 +117,7 @@ class DrinksFragment : Fragment() {
         updateDrinksList(drinksList)
     }
 
+    // Filteren op de drankjes
     private fun filterAndSearchDrinks() {
         val query = searchView.query.toString()
         val selectedType = filterSpinner.selectedItem.toString()
@@ -128,6 +130,7 @@ class DrinksFragment : Fragment() {
         updateDrinksList(filteredList)
     }
 
+    // Categoriseren van de drankjes
     private fun updateDrinksList(drinks: List<Drinks>) {
         drinksContainer.removeAllViews()
 
@@ -151,7 +154,7 @@ class DrinksFragment : Fragment() {
 
             // Voeg de header toe aan de container
             drinksContainer.addView(typeHeader)
-            Log.d("DrinksFragment", "Added header for type: $type")
+            Log.d("DrinksFragment", "Header toegevoegd voor: $type")
 
             // Voeg elke drink in de categorie toe aan de container
             for (drink in drinks) {
@@ -161,7 +164,7 @@ class DrinksFragment : Fragment() {
                 val drinkDescription: TextView? = itemView.findViewById(R.id.drink_description)
 
                 if (drinkImage == null || drinkName == null || drinkDescription == null) {
-                    Log.e("DrinksFragment", "One of the views is null: drinkImage=$drinkImage, drinkName=$drinkName, drinkDescription=$drinkDescription")
+                    Log.e("DrinksFragment", "Een van de views is leeg: drinkImage=$drinkImage, drinkName=$drinkName, drinkDescription=$drinkDescription")
                     continue
                 }
 
