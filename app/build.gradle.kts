@@ -65,6 +65,8 @@ dependencies {
     implementation(libs.gson)
     implementation(libs.glide)
     implementation(libs.androidx.media3.common)
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -72,4 +74,5 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
 }
